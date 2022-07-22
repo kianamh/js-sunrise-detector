@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun Rise</title>
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <div id="world">
+      <div id="sun">
+        <div class="sunbeams">
+          <div class="beam beam1"></div>
+          <div class="beam beam2"></div>
+          <div class="beam beam3"></div>
+          <div class="beam beam4"></div>
+          <div class="beam beam5"></div>
+          <div class="beam beam6"></div>
+          <div class="beam beam7"></div>
+          <div class="beam beam8"></div>
+        </div>
+
+        <div class="eyes">
+          <div class="eyes-l"></div>
+          <div class="eyes-r"></div>
+        </div>
+      </div>
+
+      <div id="moon">
+        <div class="crater crater1"></div>
+        <div class="crater crater2"></div>
+        <div class="crater crater3"></div>
+        <div class="crater crater4"></div>
+        <div class="crater crater5"></div>
+        <div class="crater crater6"></div>
+
+        <div class="eyes">
+          <div class="eyes-l"></div>
+
+          <div class="eyes-r"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="slidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="24"
+        value="1"
+        class="slider"
+        id="myRange"
+      />
+      <p class="simtime">
+        Simulated time: <span id="simtime-number"></span>:00
+      </p>
+    </div>
+
+    <div id="toggle-label-left">Real-time animation</div>
+    <div class="toggle">
+      <div class="switch"></div>
+    </div>
+    <div id="toggle-label-right">Slider-based animation</div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
